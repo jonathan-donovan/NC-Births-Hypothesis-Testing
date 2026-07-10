@@ -1,8 +1,29 @@
-# NCBirthsData t-test
+# North Carolina 2004 Birth Weight Analysis
 
-This project goes into detail of descriptive statistics, specifically on the
-detailed use of the one sample t-test, used when the population standard
-deviation is unknown to determine the mean of the data.
+## Overview
+
+This project goes into detail using descriptive statistics, to analyse the birth
+weight data of babies born in 2004 in the state of North Carolina and to
+determine if they are significantly different from the national average. With 
+data from the resampledata3 pachage, I performed standard data cleaning, outlier
+detection, an exploratory analysis, and finally a one-sample t-test to compare
+the NC birth weight sample mean to the CDC national average.
+
+## Data Source 
+
+The data set is "NCBirths2004" from the "resampledata3" package
+The data set contains 1,009 observations
+The data set has variables "ID", "MothersAge", "Smoker", "Alcohol", "Gender",
+                           "Weight", and "Gestation".
+National average is 3,316 grams per CDC's National Vital Statistics Report
+"Births: Final Data for 2004" from September 29, 2006.
+
+## Data Cleaning
+
+## Exploratory Analysis
+
+## Statistical Analysis
+
 
 In this project, the data called NCBirth2004 was collected from the
 resampledata3 package. It contains 1009 observations and was subject to cleaning
