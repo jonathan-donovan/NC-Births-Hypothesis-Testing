@@ -1,0 +1,28 @@
+Data does not pass Shapiro-Wilk normality test 
+ p value is: 0.009
+
+Robust to non-normality due to Central Limit Theorem sample size > 30
+
+There are  1009  observations ( 1008  Degrees of freedom ) 
+ With sample mean 3448.26 grams, 
+ national mean 3316 grams, 
+ and sample standard devation 487.736
+
+H0: North Carolina average birth weight is less than or equal to National average birth weight 
+ Ha: North Carolina average birth weight is greater than the National average birth weight
+
+Reject H0: NC birth weights are significantly larger than national mean
+ alpha: 0.05
+
+Reject H0: p-value = 1.347245e-17
+
+	One Sample t-test
+
+data:  NCBirths$Weight
+t = 8.6137, df = 1008, p-value < 2.2e-16
+alternative hypothesis: true mean is greater than 3316
+95 percent confidence interval:
+ 3422.98     Inf
+sample estimates:
+mean of x 
+  3448.26 
