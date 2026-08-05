@@ -5,7 +5,7 @@
 #=============================================
 library(ggplot2)
 
-load("~/Projects/NCBirthsData/birth_data_cleaned.RData")
+load("C:/Users/jdono/OneDrive/Documents/Projects/NCBirthsData/data/birth_data_cleaned.RData")
 
 NCBirths <- as.data.frame(birth.data.clean)
 
@@ -109,3 +109,14 @@ ggplot(df_plot, aes(x = x,y = y)) +
 
 t.test.result <- t.test(NCBirths$Weight, mu = national.mean, alternative = "greater")
 print(t.test.result)
+
+#===================================
+# Cohen's d Calculation (One-Sample)
+#===================================
+# Benchmark Guidelines
+#   Small Effect:  d ≈ 0.20
+#   Medium Effect: d ≈ 0.50
+#   Large Effect:  d ≈ 0.80
+#===================================
+cohens.d <- (sample.mean - national.mean) / sample.sd
+cat("Cohen's d:", round(cohens.d,2))

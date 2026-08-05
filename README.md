@@ -21,12 +21,13 @@ National average is 3,316 grams per CDC's National Vital Statistics Report
 ## Data Cleaning
 
 NCBirths2004 data set was cleaned by removing all NA values from the "weights"
-variable as well as checking for outliers using the z-score method of 2 standard
-deviations, as 95% of the data should fall within that range. This is useful to
-check for erroneous values that would have a high effect on the observed mean.
-There were 50 outliers using the two standard deviations criteria, accounting 
-for 4.96% of the total observations. The weight data had a mean of 3448.26 grams
-and a standard deviation of 487.74 grams.
+variable.I evaluated potential extreme values using both Z -score flagging
+(|Z|>=2) and IQR boundaries. Because these extreme weights represent plausible
+biological variation (e.g., premature or high-birth-weight infants) rather than
+data entry errors, all 1,008 valid observations were retained for statistical
+analysis. There were 50 outliers using the two standard deviations criteria,
+accountingfor 4.96% of the total observations. The weight data had a mean of
+3448.26 grams and a standard deviation of 487.74 grams.
 
 ## Exploratory Analysis
 
@@ -66,13 +67,21 @@ t = 8.61, df = 1008, p-value < 2.2e-16. This confirms the previously stated
 p-value and observed t value and reaffirms the previous rejection of the null
 hypothesis. 
 
+In order to evaluate the practicality, Cohen's d was calculated ( d = 0.27 ).
+The effect size is small even though the t-test strongly rejected the null
+hypothesis (p < 2.2 x 10^(-16). This confirms that while the 132g difference
+from the national average is statistically significant, its clinical
+significance is minor.
+
+
 ## Limitations
 
-The main limitation of the conclusion that North Carolina births in 2004 are 
-heavier than the national average is how much more heavy they were. With a 
-difference of 132.26 grams between the two means, this is a small fraction
-(3.8%) of the total weight of the babies at birth and may not be considered a
-medically significant difference in weight although it is statistically
-significant. Also, it is a limited conclusion using data from one state in one
-year. 
+A primary limitation of this study of North Carolina births in 2004 is
+the distinction between statistical and clinical significance. While NC infants
+are statistically significantly heavier than the national average, the 132.26g
+difference represents a 3.8% increase over the national average. This is
+supported by the small effect size (d = 0.27) and suggests minimal clinical
+impact. Furthermore, these results are restricted to a single year observational
+data from a single U.S. state, leading to limitations of generalizability to
+year over year or multi-state trends.
 

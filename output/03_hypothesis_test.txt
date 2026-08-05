@@ -26,3 +26,6 @@ alternative hypothesis: true mean is greater than 3316
 sample estimates:
 mean of x 
   3448.26 
+
+Cohen's d: 0.27
+
