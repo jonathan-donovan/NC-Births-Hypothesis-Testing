@@ -22,11 +22,13 @@ National average is 3,316 grams per CDC's National Vital Statistics Report
 
 NCBirths2004 data set was cleaned by removing all NA values from the "weights"
 variable.I evaluated potential extreme values using both Z -score flagging
-(|Z|>=2) and IQR boundaries. Because these extreme weights represent plausible
-biological variation (e.g., premature or high-birth-weight infants) rather than
-data entry errors, all 1,008 valid observations were retained for statistical
+(|Z|>=2) to inspect tail behavior and IQR boundaries. Because these extreme weights
+represent plausible biological variation (e.g., premature or high-birth-weight infants)
+rather than data entry errors, all 1,008 valid observations were retained for statistical
 analysis. There were 50 outliers using the two standard deviations criteria,
-accountingfor 4.96% of the total observations. The weight data had a mean of
+accountingfor 4.96% of the total observations. This falls within the
+standard distribution and do not represent anomolies. The weight data
+had a mean of
 3448.26 grams and a standard deviation of 487.74 grams.
 
 ## Exploratory Analysis
@@ -59,8 +61,8 @@ Babies born in North Carolina in 2004 weigh more than the national average.
 With 1008 degrees of freedom and 95% confidence level, the critical t value is
 1.65 and the observed t value is 8.61, providing evidence that babies born North
 Carolina on average, are heavier than those born in the entire nation. Furthermore,
-a p-value of 1.35e-17 was found suggesting an extremely low Type I error (false
-positive) which also rejects the null hypothesis. A visualization was also made 
+a p-value of 1.35e-17 is the probability of observing a sample mean of
+3,448.26 g or greater. This rejects the null hypothesis. A visualization was also made 
 using the critical and observed t values. Finally, using a premade function, the
 null hypothesis was also rejected. The following data was produced:
 t = 8.61, df = 1008, p-value < 2.2e-16. This confirms the previously stated
