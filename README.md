@@ -26,7 +26,7 @@ variable.I evaluated potential extreme values using both Z -score flagging
 biological variation (e.g., premature or high-birth-weight infants) rather than
 data entry errors, all 1,008 valid observations were retained for statistical
 analysis. There were 50 outliers using the two standard deviations criteria,
-accountingfor 4.96% of the total observations. The weight data had a mean of
+accounting for 4.96% of the total observations. The weight data had a mean of
 3448.26 grams and a standard deviation of 487.74 grams.
 
 ## Exploratory Analysis
