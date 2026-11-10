@@ -29,6 +29,7 @@ if(length(NCBirths$Weight) > 30) {
 }else {
   cat("Central limit theorem does not apply, sample size <= 30")
 }
+qqnorm(NCBirths$Weight)
 
 #===========================================
 # T-test comparison to national average data

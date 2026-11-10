@@ -44,7 +44,7 @@ resulting in 9 outliers compared to the z-score method's 50 outliers.
 During the statistical analysis, using the Shapiro-Wilk test of normality, a
 p-value of 0.01 was found, concluding that the data deviates from a strict
 normality distribution. However, due to the central limit theorem and
-visual aides in the exploratory analysis, a near-normality assumption can be
+the qqnorm plot being linear, a near-normality assumption can be
 made, and an inherent understanding that natural phenomenon often
 follow a normal distribution and understanding that the Shapiro-Wilk normality
 test is often sensitive to outliers when given larger data sets.
